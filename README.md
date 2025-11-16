@@ -2,11 +2,11 @@
 
 Solutions for [Advent of Code 2024 challenge 2](https://adventofcode.com/2024/day/2) challenges.
 
-## 📋 Project Description
+## Project Description
 
 This repository contains Python solutions for the second Advent of Code 2024 challenges. The current implementation analyzes sequences of numbers to determine if they are "safe" based on specific criteria.
 
-## 🚀 Usage
+## Usage
 
 ### Part 1: Basic Safety Analysis
 
@@ -26,7 +26,7 @@ python3 d2/script_etoile.py [filename]
 
 This version implements the "Problem Dampener" which tolerates a single bad level in what would otherwise be a safe report.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -40,7 +40,7 @@ This version implements the "Problem Dampener" which tolerates a single bad leve
 └── README.md                 # This file
 ```
 
-## 🔍 How It Works
+## How It Works
 
 The script analyzes each line of numbers (report) and classifies it as **safe** or **unsafe** based on these rules:
 
@@ -65,7 +65,7 @@ The dampened safety analysis:
 3. If removing any single level makes the report safe, it counts as safe
 4. Only if no single removal works is the report considered unsafe
 
-## 📊 Output
+## Output
 
 ### Part 1 Output
 
@@ -89,11 +89,11 @@ Number of reports with only one element : 0
 
 The dampener typically increases the number of safe reports by catching cases where removing one problematic level fixes the sequence.
 
-## 🛠️ Input Format
+## Input Format
 
 Each line in the input file should contain space-separated integers:
 
-## ⚠️ Error Handling
+## Error Handling
 
 The script handles the following error cases:
 
@@ -102,11 +102,11 @@ The script handles the following error cases:
 - **Empty lines**: Automatically skipped 
 - **Single-element lines**: Counted separately
 
-## 📝 License
+## License
 
 This project is part of Advent of Code 2024 challenge solutions.
 
-## 👤 Author
+## Author
 
 Nnoway
 

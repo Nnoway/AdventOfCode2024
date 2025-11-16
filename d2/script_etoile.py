@@ -20,7 +20,7 @@ if not l:
     print("Error: the folder is empty.")
     sys.exit(1)
 
-
+# Define function to check if a report is safe
 def is_safe(report):
     if report[1] == report[0]:
         return False  
@@ -42,7 +42,7 @@ def is_safe(report):
                 return False
     return True
 
-
+# Define function to check if a report is safe with one allowed dampener
 def is_safe_with_dampener(report):
     if is_safe(report):
         return True

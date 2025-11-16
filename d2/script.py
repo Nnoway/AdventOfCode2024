@@ -6,6 +6,7 @@ if len(sys.argv) < 2:
 else:
     filename = sys.argv[1]
 
+#open file and read lines into list of lists
 try:
     with open('./src/' + filename, 'r') as f:
         l = []
@@ -16,6 +17,7 @@ except FileNotFoundError:
     print(f"Error: The file './src/{filename}' do not exist.")
     sys.exit(1)
 
+# check if list is empty
 if not l:
     print("Error: the folder is empty.")
     sys.exit(1)
@@ -29,6 +31,8 @@ report1elt = 0
 
 while i < len(l):
     safe = True
+    
+    # check for reports with only one element or empty reports
     if len(l[i]) ==1 :
         report1elt += 1
         i += 1
@@ -57,7 +61,6 @@ while i < len(l):
         
         if safe:
             nb_safe_report += 1
-        
 
     elif l[i][1] < l[i][0] :
         # case decreasing
